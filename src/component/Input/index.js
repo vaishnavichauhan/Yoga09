@@ -3,7 +3,7 @@ import {Text ,TextInput} from 'react-native';
 import styles from './style';
 
 
-const Input = ({value,placeholder,onChangeText,keybordtype,inputStyle}) => {
+const Input = ({value,placeholder,onChangeText,keybordtype,inputStyle,onPressIn,onPressOut}) => {
     return (
         <TextInput
         style={[styles.input, inputStyle]}
@@ -11,6 +11,8 @@ const Input = ({value,placeholder,onChangeText,keybordtype,inputStyle}) => {
         value={value}
         placeholder={placeholder}
         keyboardType={keybordtype}
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
       />
     )
 }

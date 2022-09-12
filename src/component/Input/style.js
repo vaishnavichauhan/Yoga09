@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 import Colors from "../../theme/colors";
 
 const styles = StyleSheet.create({
+  
     input: {
         borderWidth: 1,
         padding: 10,

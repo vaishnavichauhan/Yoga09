@@ -19,7 +19,9 @@ const Practice = () => {
         <Text>So we can recommend exercises</Text>
       </View>
       {data.map((item) =>
-        <Button text={item.title} buttonStyle={[styles.buttonStyle, { backgroundColor: item.id === dataid.id ? "#6b4eff" : "#e3e4e5" }]} titleStyle={styles.titleStyle}
+        <Button text={item.title}
+         buttonStyle={[styles.buttonStyle, { backgroundColor: item.id === dataid.id ? "#6b4eff" : "#e3e4e5" }]}
+         titleStyle={styles.titleStyle}
           onPress={(e) => press(item)}
         />
       )}

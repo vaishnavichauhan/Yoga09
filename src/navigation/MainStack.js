@@ -13,6 +13,9 @@ import Login from '../pages/Login';
 import Authentication from '../pages/Authentication';
 import Practice from '../pages/Practice';
 import Goal from '../pages/Goal';
+import Email from '../pages/Email';
+import Findshop from '../pages/Findshop';
+import Items from '../pages/Items';
 
 
  const Stack = createNativeStackNavigator();
@@ -29,7 +32,13 @@ const MainStack = () => {
                 {/* <Stack.Screen name="Login" component={Login} /> */}
                 {/* <Stack.Screen name="Authentication" component={Authentication} /> */}
                 {/* <Stack.Screen name="Practice" component={Practice} /> */}
-                <Stack.Screen name="Goal" component={Goal} />
+                {/* <Stack.Screen name="Goal" component={Goal} /> */}
+                {/* <Stack.Screen name="Email" component={Email} /> */}
+                <Stack.Screen name="Findshop" component={Findshop} />
+                {/* <Stack.Screen name="Items" component={Items} /> */}
+
+                
+
 
 
             </Stack.Navigator>
