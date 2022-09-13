@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { color } from "react-native-reanimated";
 import Colors from "../../theme/colors";
 
 const styles = StyleSheet.create({
@@ -14,6 +15,10 @@ const styles = StyleSheet.create({
     },
     inputStyle:{
         marginBottom:10,
+    },
+    errorMsg:{
+        color:Colors.red,
+        marginBottom:5,
     },
     headerText:{
         color:Colors.blue,

@@ -18,6 +18,9 @@ const styles = StyleSheet.create({
         fontSize:17,
         marginVertical:10,
     },
+    errorMsg:{
+        color:Colors.red
+    },
     space:{
         flex:2,
     },

@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 var arrays =[];
 var progressvalue;
+
 const Goal= () => {
   const[dataid, setdataid]=useState([]);
 

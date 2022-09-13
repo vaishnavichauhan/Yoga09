@@ -4,9 +4,10 @@ import {StyleSheet,Text,View,ImageBackground} from "react-native";
 import Button from "../../component/Button";
 import Header from "../../component/Header";
 import styles from "./style";
-
+import Images from '../../assers/images';
+const { yoga } = Images;
 const Splash = ({}) => (
-    <ImageBackground source={require('../../assers/images/yogaleady.png')}  style={styles.image}>
+    <ImageBackground source={yoga}  style={styles.image}>
  <View style={styles.container}>
 
     <View style={{flex:1}}>
