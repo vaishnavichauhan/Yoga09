@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react';
 import styles from './style';
 import Header from '../../component/Header';
@@ -6,7 +6,7 @@ import Input from '../../component/Input';
 import data from './data';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
- const Findshop = ()=>{
+ const Findshop = ({navigation})=>{
    var [texts,setTexts]= useState("");
    const [press, setpress]=useState(false);
     
@@ -14,13 +14,22 @@ import Icon from 'react-native-vector-icons/FontAwesome';
     return i.title.toUpperCase().includes(texts.toUpperCase())
   })
   var mynewdata; 
-
+  function check(){
   if(texts.length < 1){
       mynewdata = data;
-
   }else{
      mynewdata = ans;
   }
+  }
+  check();
+
+ function  validNavigate(){
+  if(ans.length==1){
+  navigation.navigate("Items")
+  }
+};
+
+
  
   return (
     <View style={styles.container}>
@@ -38,7 +47,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
       <View>
         {
         mynewdata.map((item) =>
-            <View style={styles.boxstyle} >
+        <TouchableOpacity onPress={() => validNavigate()}>       
+            <View style={styles.boxstyle}>
             <Icon name="map" size={20} style={styles.icon}  />
             <View>
             <Text style={styles.titlestyle} >{item.title} </Text>
@@ -46,6 +56,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
             </View>
           
              </View> 
+             </TouchableOpacity>
         )}
       </View>
 

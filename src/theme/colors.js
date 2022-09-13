@@ -7,5 +7,6 @@ const Colors ={
     grayless:"#f2f4f5",
     lightblue:"#E7E7FF",
     red:"#FF5733",
+    graydark:"#808080"
 }
 export default Colors;

@@ -2,14 +2,13 @@ import { StyleSheet } from "react-native";
 import Colors from "../../theme/colors";
 
 const styles = StyleSheet.create({
-
    container: {
       flex: 1,
-      marginHorizontal: 12,
-      marginBottom: 20,
-      marginTop: 10,
+      paddingHorizontal: 12,
+      paddingBottom: 20,
+      paddingTop: 10,
+      backgroundColor:Colors.white
    },
-  
    buttonStyle:{
       backgroundColor: Colors.gray,
       marginBottom: 5,
@@ -25,8 +24,6 @@ const styles = StyleSheet.create({
    },
    footer: {
       flex: 1,
-
    }
-
 })
 export default styles;

@@ -8,7 +8,10 @@ const styles = StyleSheet.create({
         flex: 1,
       marginHorizontal: 12,
       marginBottom: 20,
-      marginTop: 10,
+      marginTop: 30,
+    },
+    position:{
+        marginTop:20,
     },
     texts:{
      marginTop:5, 

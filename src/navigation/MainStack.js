@@ -1,5 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
+import styles from './styles';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -28,17 +29,17 @@ const MainStack = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen name="Home" component={Splash} />
-                {/* <Stack.Screen name="CreateAccount" component={CreateAccount} /> */}
-                {/* <Stack.Screen name="WelcomeBack" component={WelcomeBack} /> */}
-                {/* <Stack.Screen name="Login" component={Login} /> */}
-                {/* <Stack.Screen name="Authentication" component={Authentication} /> */}
-                {/* <Stack.Screen name="Practice" component={Practice} /> */}
-                {/* <Stack.Screen name="Goal" component={Goal} /> */}
-                {/* <Stack.Screen name="Email" component={Email} /> */}
-                {/* <Stack.Screen name="Findshop" component={Findshop} /> */}
-                {/* <Stack.Screen name="Items" component={Items} /> */}
-                {/* <Stack.Screen name="Notification" component={Notification} />  */}
+                <Stack.Screen options={{headerShown:false }} name="Home" component={Splash} />
+                <Stack.Screen options={{headerShown:false }} name="CreateAccount" component={CreateAccount} />
+                <Stack.Screen options={styles.WelComeBackS} name="WelcomeBack" component={WelcomeBack} />
+                <Stack.Screen options={styles.LoginS}name="Login" component={Login} />
+                <Stack.Screen options={styles.AuthenticationS} name="Authentication" component={Authentication} />
+                <Stack.Screen options={styles.PracticeS} name="Practice" component={Practice} />
+                <Stack.Screen options={{headerShown:false }} name="Goal" component={Goal} />
+                <Stack.Screen options={styles.EmailS}name="Email" component={Email} />
+                <Stack.Screen options={styles.FindshopS} name="Findshop" component={Findshop} />
+                <Stack.Screen options={styles.ItemsS}name="Items" component={Items} />
+                <Stack.Screen name="Notification" component={Notification} /> 
                 {/* <Stack.Screen name="Discover" component={Discover} /> */}
                 {/* <Stack.Screen name="Profile" component={Profile} /> */}
             </Stack.Navigator>

@@ -1,14 +1,13 @@
 import { StyleSheet } from "react-native";
-import { color } from "react-native-reanimated";
 import Colors from "../../theme/colors";
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginHorizontal: 12,
-        marginBottom: 20,
-        marginTop: 10,
-       
+        paddingHorizontal: 12,
+        paddingBottom: 20,
+        paddingTop: 10,
+        backgroundColor:Colors.white,
     },
     header:{
         flex:1,
@@ -39,4 +38,5 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     }
 });
+
 export default styles;

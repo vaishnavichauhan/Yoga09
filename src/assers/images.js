@@ -1,5 +1,6 @@
 const Images = {
 yoga:require("../assers/images/yogaleady.png"),
+logo:require("../assers/images/logo.png"),
 roomdecor1:require("../assers/images/room4.jpg"),
 roomdecor2:require("../assers/images/room2.jpg"),
 roomdecor3:require("../assers/images/room3.jpg"),

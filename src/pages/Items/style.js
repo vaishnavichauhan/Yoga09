@@ -1,23 +1,16 @@
 import { StyleSheet } from "react-native";
-import Colors from "../../theme/colors";
-
-
 const styles = StyleSheet.create({
-    
-    container:{
+    container: {
         flex: 1,
         marginHorizontal: 12,
         marginBottom: 20,
         marginTop: 10,
     },
-    main:{
-        flex:1,
-        flexDirection:"row",
+    main: {
+        flex: 1,
+        flexDirection: "row",
         flexWrap: "wrap",
-        justifyContent:"space-between",
-
-
-
+        justifyContent: "space-between",
     }
 });
 
