@@ -14,6 +14,17 @@ const MainHome = ({}) => {
             //  navigation.navigate("CreateAccount")
         )
     }
+    
+    function diff_hours(dateTimeInString){
+        var dt1
+        var dt2
+          dt1 = new Date(dateTimeInString);
+         dt2 = new Date();
+     var diff =(dt2.getTime() - dt1.getTime()) / 1000;
+     diff /= (60 * 60);
+     var abc=  Math.abs(Math.round(diff));
+     return abc+ "h ago"
+    }
     return (
         <View style={styles.container}>
             <ScrollView>
@@ -41,7 +52,7 @@ const MainHome = ({}) => {
                         source={item.img}
                         title={item.title}
                         subTitle={item.subTitle}
-                        time={item.time}
+                        time={diff_hours(item.time)}
                         onPress={() => display(item)}
                     />
                 )}

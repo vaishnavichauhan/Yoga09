@@ -16,7 +16,7 @@ const data = [
         id: 2,
         title: "CAllifornia Ends Strict virus Restricition as New Cases Fall",
         subTitle: ".by isabella knwal",
-        time:"2h ago",
+        time:"Septmber 14, 2022 11:15:00",
         img: bus2,
 
     },
@@ -24,7 +24,7 @@ const data = [
         id: 3,
         title: "Callifornia Ends Strict virus Restricition as New Cases Fall",
         subTitle: ".by isabella knwal",
-        time:"2h ago",
+        time:"Septmber 14, 2022 10:41:00",
         img: bus,
 
     },
@@ -32,7 +32,7 @@ const data = [
         id: 4,
         title: "CAllifornia Ends Strict virus Restricition as New Cases Fall",
         subTitle: ".by isabella knwal",
-        time:"2h ago",
+        time:"Septmber 14, 2022 17:41:00",
         img: bus2,
 
     },
@@ -40,7 +40,7 @@ const data = [
         id: 5,
         title: "Callifornia Ends Strict virus Restricition as New Cases Fall",
         subTitle: ".by isabella knwal",
-        time:"2h ago",
+        time:"Septmber 14, 2022 19:41:00",
         img: bus,
 
     },
@@ -48,7 +48,7 @@ const data = [
         id: 6,
         title: "CAllifornia Ends Strict virus Restricition as New Cases Fall",
         subTitle: ".by isabella knwal",
-        time:"2h ago",
+        time:"Septmber 14, 2022 19:41:00",
         img: bus2,
 
     },

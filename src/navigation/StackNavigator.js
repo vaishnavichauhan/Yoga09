@@ -16,7 +16,7 @@ import Findshop from '../pages/Findshop';
 import Items from '../pages/Items';
 
 
-
+96/8/59
 const Stack = createNativeStackNavigator();
 const MainStackNavigator = () => {
     return (
