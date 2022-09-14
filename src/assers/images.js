@@ -8,5 +8,7 @@ roomdecor4:require("../assers/images/room.jpg"),
 profile1:require("../assers/images/profile.jpg"),
 profile2:require("../assers/images/profile2.jpg"),
 discoverIcon:require("../assers/images/logod.png"),
+bus:require("../assers/images/bus.jpg"),
+bus2:require("../assers/images/bus1.jpg"),
 };
 export default Images;

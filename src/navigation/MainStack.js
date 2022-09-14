@@ -18,8 +18,10 @@ import Email from '../pages/Email';
 import Findshop from '../pages/Findshop';
 import Items from '../pages/Items';
 import Notification from '../pages/Notification';
+import MainHome from '../pages/MainHome';
 import Discover from '../pages/Discover.js';
 import Profile from '../pages/Profile';
+
 
 
  const Stack = createNativeStackNavigator();
@@ -29,17 +31,18 @@ const MainStack = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen options={{headerShown:false }} name="Home" component={Splash} />
-                <Stack.Screen options={{headerShown:false }} name="CreateAccount" component={CreateAccount} />
-                <Stack.Screen options={styles.WelComeBackS} name="WelcomeBack" component={WelcomeBack} />
-                <Stack.Screen options={styles.LoginS}name="Login" component={Login} />
-                <Stack.Screen options={styles.AuthenticationS} name="Authentication" component={Authentication} />
-                <Stack.Screen options={styles.PracticeS} name="Practice" component={Practice} />
-                <Stack.Screen options={{headerShown:false }} name="Goal" component={Goal} />
-                <Stack.Screen options={styles.EmailS}name="Email" component={Email} />
-                <Stack.Screen options={styles.FindshopS} name="Findshop" component={Findshop} />
-                <Stack.Screen options={styles.ItemsS}name="Items" component={Items} />
-                <Stack.Screen name="Notification" component={Notification} /> 
+                {/* <Stack.Screen options={{headerShown:false }} name="Home" component={Splash} /> */}
+                {/* <Stack.Screen options={{headerShown:false }} name="CreateAccount" component={CreateAccount} /> */}
+                {/* <Stack.Screen options={styles.WelComeBackS} name="WelcomeBack" component={WelcomeBack} /> */}
+                {/* <Stack.Screen options={styles.LoginS}name="Login" component={Login} /> */}
+                {/* <Stack.Screen options={styles.AuthenticationS} name="Authentication" component={Authentication} /> */}
+                {/* <Stack.Screen options={styles.PracticeS} name="Practice" component={Practice} /> */}
+                {/* <Stack.Screen options={{headerShown:false }} name="Goal" component={Goal} /> */}
+                {/* <Stack.Screen options={styles.EmailS}name="Email" component={Email} /> */}
+                {/* <Stack.Screen options={styles.FindshopS} name="Findshop" component={Findshop} /> */}
+                {/* <Stack.Screen options={styles.ItemsS}name="Items" component={Items} /> */}
+                {/* <Stack.Screen name="Notification" component={Notification} />  */}
+                <Stack.Screen name="MainHome" component={MainHome} />
                 {/* <Stack.Screen name="Discover" component={Discover} /> */}
                 {/* <Stack.Screen name="Profile" component={Profile} /> */}
             </Stack.Navigator>
