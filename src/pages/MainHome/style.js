@@ -8,14 +8,12 @@ const styles = StyleSheet.create({
         paddingTop: 10,
     },
     btn:{
-        
         flexDirection:"row", 
     },
     img:{
         height:150,
         width:"100%",
         marginVertical:15,
-
     },
     textSmall:{
         fontSize:12,

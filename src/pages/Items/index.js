@@ -12,7 +12,7 @@ const Items = ({ navigation }) => {
           {data.map((item) =>
             <Card title={item.title}
               imagespath={item.img}
-              onpress={() => navigation.navigate("Notification")}
+              onpress={() => navigation.navigate("BottomTabNavigator")}
             />
           )}
         </View>

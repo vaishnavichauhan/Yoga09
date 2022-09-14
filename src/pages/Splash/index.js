@@ -21,7 +21,9 @@ const Splash = ({navigation}) => (
                     titleStyle={styles.titleStyle}
                     buttonStyle={styles.buttonStyle}
                     text="Get started"
-                    onPress= {() => navigation.navigate("CreateAccount")}
+                    // onPress= {() => navigation.navigate("CreateAccount")}
+                    onPress= {() => navigation.navigate("Findshop")}
+                    
                     />
             </View>
         </View>

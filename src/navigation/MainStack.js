@@ -1,10 +1,10 @@
 import React from 'react';
-import { View } from 'react-native';
-import styles from './styles';
+import MainStackNavigator from './StackNavigator';
+import BottomTabNavigator from './TabNavigator';
 
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
+ //import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
 import Splash from '../pages/Splash';
@@ -19,18 +19,20 @@ import Findshop from '../pages/Findshop';
 import Items from '../pages/Items';
 import Notification from '../pages/Notification';
 import MainHome from '../pages/MainHome';
-import Discover from '../pages/Discover.js';
+import Discover from '../pages/Discover';
 import Profile from '../pages/Profile';
 
-
-
- const Stack = createNativeStackNavigator();
+//const Stack = createNativeStackNavigator();
+// const Tab = createBottomTabNavigator();
 //const Drawer = createDrawerNavigator();
 
 const MainStack = () => {
+    console.log('MainStack file')
     return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home">
+         <NavigationContainer>
+            <MainStackNavigator/>
+            {/* <BottomTabNavigator/> */}
+            {/* <Stack.Navigator > */}
                 {/* <Stack.Screen options={{headerShown:false }} name="Home" component={Splash} /> */}
                 {/* <Stack.Screen options={{headerShown:false }} name="CreateAccount" component={CreateAccount} /> */}
                 {/* <Stack.Screen options={styles.WelComeBackS} name="WelcomeBack" component={WelcomeBack} /> */}
@@ -41,11 +43,13 @@ const MainStack = () => {
                 {/* <Stack.Screen options={styles.EmailS}name="Email" component={Email} /> */}
                 {/* <Stack.Screen options={styles.FindshopS} name="Findshop" component={Findshop} /> */}
                 {/* <Stack.Screen options={styles.ItemsS}name="Items" component={Items} /> */}
+               
+              
+                {/* <Stack.Screen name="MainHome" component={MainHome} /> */}
                 {/* <Stack.Screen name="Notification" component={Notification} />  */}
-                <Stack.Screen name="MainHome" component={MainHome} />
                 {/* <Stack.Screen name="Discover" component={Discover} /> */}
                 {/* <Stack.Screen name="Profile" component={Profile} /> */}
-            </Stack.Navigator>
+            {/* </Stack.Navigator> */}
         </NavigationContainer>
     )
 };

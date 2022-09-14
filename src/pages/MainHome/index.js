@@ -6,11 +6,12 @@ import CardSqureImg from '../../component/CardSqureImg';
 import styles from './style';
 import { useState } from 'react';
 
-const MainHome = () => {
+const MainHome = ({}) => {
     const [terminal, setterminal] = useState({})
     function display(i) {
         return (
             setterminal(i)
+            //  navigation.navigate("CreateAccount")
         )
     }
     return (
