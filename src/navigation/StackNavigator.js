@@ -16,19 +16,19 @@ import Findshop from '../pages/Findshop';
 import Items from '../pages/Items';
 
 
-96/8/59
+//96/8/59
 const Stack = createNativeStackNavigator();
 const MainStackNavigator = () => {
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen options={{headerShown:false }} name="splash" component={Splash} />
-            {/* <Stack.Screen options={{headerShown:false }} name="CreateAccount" component={CreateAccount} />
+            <Stack.Screen options={{headerShown:false }} name="CreateAccount" component={CreateAccount} />
             <Stack.Screen options={styles.WelComeBackS} name="WelcomeBack" component={WelcomeBack} />
             <Stack.Screen options={styles.LoginS}name="Login" component={Login} />
             <Stack.Screen options={styles.AuthenticationS} name="Authentication" component={Authentication} />
             <Stack.Screen options={styles.PracticeS} name="Practice" component={Practice} />
             <Stack.Screen options={{headerShown:false }} name="Goal" component={Goal} />
-            <Stack.Screen options={styles.EmailS}name="Email" component={Email} /> */}
+            <Stack.Screen options={styles.EmailS}name="Email" component={Email} />
             <Stack.Screen options={styles.FindshopS} name="Findshop" component={Findshop} />
             <Stack.Screen options={styles.ItemsS}name="Items" component={Items} />
             <Stack.Screen name="BottomTabNavigator" component={BottomTabNavigator} />
